@@ -1,0 +1,36 @@
+{
+  "package": "VG8_Open_Collaboration_Public_Repo_Seed_2026-09-07",
+  "purpose": "Publication-safe open-collaboration repository seed; no proprietary source binaries included.",
+  "authority": "CP41 remains authoritative; this seed is governance/documentation, not a checkpoint.",
+  "licenses": {
+    "code": "GPL-3.0-or-later",
+    "documentation": "CC-BY-SA-4.0"
+  },
+  "files": [
+    {"path":".github/ISSUE_TEMPLATE/correction.md","bytes":269,"sha256":"d17749ebc13577990761b476fbbceae098210ca8d461c011993f036cea4e4c15"},
+    {"path":".github/ISSUE_TEMPLATE/evidence-report.md","bytes":345,"sha256":"1f1eb1691d50363ddc3b0b4986b3f6f2f7ee46ec92809da6550269a37087ba98"},
+    {"path":"AI_DISCLOSURE.md","bytes":787,"sha256":"d24bcd6b3ab29e73509b65109434da6fcd2288b872f73f30c100109c8e0f5efd"},
+    {"path":"ATTRIBUTION.md","bytes":684,"sha256":"b42985f9bab4d5af62c0f31ea08366f3e4ad8ada1de2f5427af6595b1ef6f193"},
+    {"path":"CODE_OF_CONDUCT.md","bytes":432,"sha256":"baf52a61f5cff1ab180f75019e6f7b280f3553ffe1bdd9a0fe1c2d27dc19e710"},
+    {"path":"CONTRIBUTING.md","bytes":950,"sha256":"278cb40fd5bfc3e3061b0ab2a8f0f25ac6c11a08980611c674131b3712ba3129"},
+    {"path":"EVIDENCE_POLICY.md","bytes":1134,"sha256":"d072bc9bf86432ade4873226234e8c362e95e4b499a40c3f4f031e825d755874"},
+    {"path":"LICENSE","bytes":35149,"sha256":"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"},
+    {"path":"LICENSE-DOCS.md","bytes":550,"sha256":"a5283da845d25aba21ee6a43dfaf827d31cd533918bae62521b3b6b589e73bdb"},
+    {"path":"OPEN_COLLABORATION_CHARTER.md","bytes":2105,"sha256":"ae0c2ea1eebef269e0932fc810d8a46df99a6a8280a988bca1782493a7314627"},
+    {"path":"PUBLICATION_CHECKLIST.md","bytes":832,"sha256":"5879cdcc1bf62653de02228b43104b9cf5eb0ced6add383c6f79c0adcfc22d66"},
+    {"path":"PUBLICATION_POLICY.md","bytes":1199,"sha256":"61623d8670564e68f613e6a24a0115b6de8e6a73a416cf2991f7af47b124d93c"},
+    {"path":"README.md","bytes":3016,"sha256":"75af69d37da2be4c1f6d58fbaa901a197e4f27729a78fddbbebf5b31327b99e0"},
+    {"path":"docs/CSP2_STATUS.md","bytes":660,"sha256":"d4c19f7c54e09f6731281dd87a714f875505808bb0db826fc6ca4a6c197280d0"},
+    {"path":"docs/CURRENT_STATE_PUBLIC.md","bytes":1508,"sha256":"a4d603ea134d7be3c5d88880ab8886992db59f991d983ce35508dbacf479176b"},
+    {"path":"docs/IC23_STATUS.md","bytes":1099,"sha256":"5b07569fb8ed0feb567236e49107e2e69a277a11e9a556940e99494922996451"},
+    {"path":"docs/RESEARCH_WORKFLOW.md","bytes":622,"sha256":"4c9a0f6c4e720831980ff983e667766e55eb3e158efb74c66bd0fb0cfbd75396"},
+    {"path":"docs/TBLR_POC_REPORT.md","bytes":1272,"sha256":"da5dc021a618cf688fb131031c7da9ad252d36bd105252532785d24971c1d556"},
+    {"path":"docs/TMP320P16_ROM_FRONTIER.md","bytes":5913,"sha256":"b06fcb481660537154a55cadab0634afc25362edc53a95d02e1e90b985efc66f"},
+    {"path":"evidence/CLAIM_TEMPLATE.md","bytes":300,"sha256":"e44318d4efef6c564c9ee1fe5e5733701cbbfe649a209224e735852eb2577553"},
+    {"path":"evidence/PUBLIC_SOURCE_LEDGER_TEMPLATE.csv","bytes":153,"sha256":"39a2c6c17fa5ab59f72d43cbf2f13cc46b6f1b9c078b488544080c59c06c5dc7"},
+    {"path":"evidence/TMP320P16_PUBLIC_SOURCE_LEDGER.csv","bytes":1243,"sha256":"7d72181ec9dda05aa7f954ae74191586d2a2296f6fb6d75bdbce3b64bcb2ab06"},
+    {"path":"tools/publication_lint.py","bytes":1432,"sha256":"a4e914e41b533b8346026562becbcb4a0d9055dc54bcb2af8570631c41d80c89"},
+    {"path":"tools/tms320c1x_tblr_model.py","bytes":1705,"sha256":"1c3ae19f076ee4769afe51870dd0161ccf1f749954ebc2e42f170f80857a2ee8"},
+    {"path":"tools/verify_manifest.py","bytes":565,"sha256":"9517b44ad1fb225319697005fd5328e425a62a65054cfbf1455d025c73ce4fe2"}
+  ]
+}
