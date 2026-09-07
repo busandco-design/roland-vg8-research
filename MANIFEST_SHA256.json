@@ -7,6 +7,7 @@
     "documentation": "CC-BY-SA-4.0"
   },
   "files": [
+    {"path":".gitattributes","bytes":19,"sha256":"d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"},
     {"path":".github/ISSUE_TEMPLATE/correction.md","bytes":269,"sha256":"d17749ebc13577990761b476fbbceae098210ca8d461c011993f036cea4e4c15"},
     {"path":".github/ISSUE_TEMPLATE/evidence-report.md","bytes":345,"sha256":"1f1eb1691d50363ddc3b0b4986b3f6f2f7ee46ec92809da6550269a37087ba98"},
     {"path":"AI_DISCLOSURE.md","bytes":787,"sha256":"d24bcd6b3ab29e73509b65109434da6fcd2288b872f73f30c100109c8e0f5efd"},
