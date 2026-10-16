@@ -1,0 +1,347 @@
+{
+  "evidence_class": "E3",
+  "hardware_tested": false,
+  "python": "3.12.14",
+  "capstone": "5.0.7",
+  "unicorn": "2.1.4",
+  "v104": {
+    "input_name": "VG8_v1.04_reconstructed.bin",
+    "input_bytes": 392192,
+    "input_sha256": "a91607c17bfe7454fadf6efb447f60b58e33b08b2f3f83eea3d892ae769c50b3",
+    "zero_prefix_added": 1024,
+    "zero_suffix_added": 0,
+    "assembled_bytes": 393216,
+    "assembled_sha256": "396230b85affbc975c6bd39182d44862cae39f64fab7d23dfd7951ae8ead4866",
+    "signature_file_offsets": [
+      "0x19534",
+      "0x19571"
+    ],
+    "signature_linear_addresses_at_base_80000": [
+      "0x99534",
+      "0x99571"
+    ]
+  },
+  "ex101": {
+    "input_name": "VG8EX_v1.01_reconstructed.bin",
+    "input_bytes": 523520,
+    "input_sha256": "1cb26b616f407a38799c6038d4224652b85d20dfde7b42c33e93ae7b2c2cc287",
+    "zero_prefix_added": 256,
+    "zero_suffix_added": 512,
+    "assembled_bytes": 524288,
+    "assembled_sha256": "c7045aaa10f3eaa020e64e045c4ba7497c4c093801d4f3d1c9d8ccf2ce617c12",
+    "signature_file_offsets": [
+      "0x1fe32",
+      "0x1fe6f",
+      "0x1ff83"
+    ],
+    "signature_linear_addresses_at_base_80000": [
+      "0x9fe32",
+      "0x9fe6f",
+      "0x9ff83"
+    ]
+  },
+  "updater_reconstruction": {
+    "archive_sha256": "4d7cfc831046901ff7012a3d965a28b724d33796f8b118bd013a00684adefd04",
+    "checksummed_packets": 3064,
+    "mido_version": "1.3.3",
+    "matches_retained_stream": true
+  },
+  "ex_word_read_sequence_matches": {
+    "v104": [],
+    "ex101": [
+      "0x1ff88"
+    ]
+  },
+  "v104_drain_disassembly": [
+    {
+      "file_offset": "0x19571",
+      "instruction": "mov ax, 0x1000"
+    },
+    {
+      "file_offset": "0x19574",
+      "instruction": "mov es, ax"
+    },
+    {
+      "file_offset": "0x19576",
+      "instruction": "mov al, byte ptr es:[0x28]"
+    },
+    {
+      "file_offset": "0x1957a",
+      "instruction": "mov al, byte ptr es:[0x29]"
+    },
+    {
+      "file_offset": "0x1957e",
+      "instruction": "mov al, byte ptr es:[0x2a]"
+    },
+    {
+      "file_offset": "0x19582",
+      "instruction": "mov al, byte ptr es:[0x2b]"
+    },
+    {
+      "file_offset": "0x19586",
+      "instruction": "mov al, byte ptr es:[0x2c]"
+    },
+    {
+      "file_offset": "0x1958a",
+      "instruction": "mov al, byte ptr es:[0x2d]"
+    },
+    {
+      "file_offset": "0x1958e",
+      "instruction": "retf "
+    }
+  ],
+  "v104_direct_far_calls_to_drain_linear": [
+    "0x993e6",
+    "0x993eb",
+    "0x993f0"
+  ],
+  "v104_additional_caller_disassembly": [
+    {
+      "file_offset": "0x193e6",
+      "instruction": "lcall 0x9957, 1"
+    },
+    {
+      "file_offset": "0x193eb",
+      "instruction": "lcall 0x9957, 1"
+    },
+    {
+      "file_offset": "0x193f0",
+      "instruction": "lcall 0x9957, 1"
+    },
+    {
+      "file_offset": "0x193f5",
+      "instruction": "mov ax, 0xffe0"
+    },
+    {
+      "file_offset": "0x193f8",
+      "instruction": "mov es, ax"
+    }
+  ],
+  "ex_consumer_disassembly": [
+    {
+      "file_offset": "0x1ff83",
+      "instruction": "mov ax, 0x1000"
+    },
+    {
+      "file_offset": "0x1ff86",
+      "instruction": "mov es, ax"
+    },
+    {
+      "file_offset": "0x1ff88",
+      "instruction": "mov si, word ptr es:[0x28]"
+    },
+    {
+      "file_offset": "0x1ff8d",
+      "instruction": "and si, 0xff"
+    },
+    {
+      "file_offset": "0x1ff91",
+      "instruction": "mov ax, word ptr es:[0x2a]"
+    },
+    {
+      "file_offset": "0x1ff95",
+      "instruction": "mov dx, word ptr es:[0x2c]"
+    },
+    {
+      "file_offset": "0x1ff9a",
+      "instruction": "cmp si, word ptr [0x1150]"
+    },
+    {
+      "file_offset": "0x1ff9e",
+      "instruction": "jne 0x1ffaa"
+    },
+    {
+      "file_offset": "0x1ffa0",
+      "instruction": "mov bx, 0xffe0"
+    },
+    {
+      "file_offset": "0x1ffa3",
+      "instruction": "mov es, bx"
+    },
+    {
+      "file_offset": "0x1ffa5",
+      "instruction": "mov bx, 0x1000"
+    },
+    {
+      "file_offset": "0x1ffa8",
+      "instruction": "mov es, bx"
+    },
+    {
+      "file_offset": "0x1ffaa",
+      "instruction": "cmp byte ptr [0x1448], 0"
+    },
+    {
+      "file_offset": "0x1ffaf",
+      "instruction": "jne 0x20018"
+    },
+    {
+      "file_offset": "0x1ffb1",
+      "instruction": "cmp si, 6"
+    },
+    {
+      "file_offset": "0x1ffb4",
+      "instruction": "jae 0x20018"
+    },
+    {
+      "file_offset": "0x1ffb6",
+      "instruction": "test ah, 0x80"
+    },
+    {
+      "file_offset": "0x1ffb9",
+      "instruction": "jne 0x20018"
+    },
+    {
+      "file_offset": "0x1ffbb",
+      "instruction": "test dh, 0x80"
+    },
+    {
+      "file_offset": "0x1ffbe",
+      "instruction": "je 0x1ffc3"
+    },
+    {
+      "file_offset": "0x1ffc0",
+      "instruction": "mov dx, 0xffff"
+    },
+    {
+      "file_offset": "0x1ffc3",
+      "instruction": "shl si, 1"
+    },
+    {
+      "file_offset": "0x1ffc5",
+      "instruction": "mov bx, word ptr cs:[si + 0xac]"
+    },
+    {
+      "file_offset": "0x1ffca",
+      "instruction": "inc byte ptr [bx + 0x2c]"
+    },
+    {
+      "file_offset": "0x1ffcd",
+      "instruction": "or byte ptr [bx + 0x33], 1"
+    },
+    {
+      "file_offset": "0x1ffd1",
+      "instruction": "mov di, word ptr [bx]"
+    },
+    {
+      "file_offset": "0x1ffd3",
+      "instruction": "add di, 4"
+    },
+    {
+      "file_offset": "0x1ffd6",
+      "instruction": "cmp di, word ptr [bx + 6]"
+    },
+    {
+      "file_offset": "0x1ffd9",
+      "instruction": "jne 0x1ffde"
+    },
+    {
+      "file_offset": "0x1ffdb",
+      "instruction": "mov di, word ptr [bx + 4]"
+    },
+    {
+      "file_offset": "0x1ffde",
+      "instruction": "mov word ptr [bx], di"
+    },
+    {
+      "file_offset": "0x1ffe0",
+      "instruction": "mov word ptr [di], dx"
+    },
+    {
+      "file_offset": "0x1ffe2",
+      "instruction": "mul word ptr [si + 0x2d2]"
+    },
+    {
+      "file_offset": "0x1ffe6",
+      "instruction": "cmp dx, 0x2000"
+    },
+    {
+      "file_offset": "0x1ffea",
+      "instruction": "jb 0x1fff4"
+    },
+    {
+      "file_offset": "0x1ffec",
+      "instruction": "inc word ptr [bx + 0x10]"
+    },
+    {
+      "file_offset": "0x1ffef",
+      "instruction": "mov dx, 0x7fff"
+    },
+    {
+      "file_offset": "0x1fff2",
+      "instruction": "jmp 0x20015"
+    },
+    {
+      "file_offset": "0x1fff4",
+      "instruction": "mov ax, dx"
+    },
+    {
+      "file_offset": "0x1fff6",
+      "instruction": "mov cl, 6"
+    },
+    {
+      "file_offset": "0x1fff8",
+      "instruction": "rol ax, cl"
+    },
+    {
+      "file_offset": "0x1fffa",
+      "instruction": "mov bx, ax"
+    },
+    {
+      "file_offset": "0x1fffc",
+      "instruction": "and bx, 7"
+    },
+    {
+      "file_offset": "0x1ffff",
+      "instruction": "shl bx, 1"
+    },
+    {
+      "file_offset": "0x20001",
+      "instruction": "and ax, 0xfff0"
+    },
+    {
+      "file_offset": "0x20004",
+      "instruction": "mov cx, word ptr cs:[bx + 0xba]"
+    },
+    {
+      "file_offset": "0x20009",
+      "instruction": "sub cx, word ptr cs:[bx + 0xb8]"
+    },
+    {
+      "file_offset": "0x2000e",
+      "instruction": "mul cx"
+    },
+    {
+      "file_offset": "0x20010",
+      "instruction": "add dx, word ptr cs:[bx + 0xb8]"
+    },
+    {
+      "file_offset": "0x20015",
+      "instruction": "mov word ptr [di + 2], dx"
+    }
+  ],
+  "ex_state_pointer_table": [
+    "0x433c",
+    "0x437c",
+    "0x43bc",
+    "0x43fc",
+    "0x443c",
+    "0x447c"
+  ],
+  "ex_envelope_curve": [
+    "0x0",
+    "0x2000",
+    "0x4000",
+    "0x5000",
+    "0x6000",
+    "0x6800",
+    "0x7000",
+    "0x7800",
+    "0x7fff"
+  ],
+  "synthetic_handler_cases_passed": 322,
+  "limitations": [
+    "Signature search is not exhaustive control-flow or alias analysis.",
+    "Unicorn runs the handler body with synthetic RAM; NEC interrupt entry/exit and peripheral side effects are excluded.",
+    "Packet naming and physical device ownership remain architectural interpretations."
+  ]
+}
