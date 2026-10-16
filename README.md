@@ -14,6 +14,8 @@ A complete motherboard-level VG-8 emulator is a broader goal and may require add
 
 Post-CP41 research may narrow open questions, but it does not become silicon truth merely because it is plausible or executable.
 
+The [2026-10-16 issue #1 review](docs/ISSUE_1_REVIEW.md) reproduces firmware packet-handler checks, corrects version scope, and records the unresolved CSP-2 IRAM hypothesis. It does not promote a new checkpoint.
+
 ## Non-negotiable evidence boundary
 
 `E6` — genuine physical CSP-2 observation — is still absent.

@@ -10,6 +10,8 @@ Service evidence establishes VG-8/VG-8EX with two `RA03-002 / TC170C110AF-002` C
 Substantial host-side PRAM/CRAM/config/readback behavior and exact factory BowedPad program/preload state are recovered. Open: revision-specific physical semantics for several delayed-publication/control cases, exact IC22 reduction/routing, and E6 physical confirmation.
 
 ## IC23 state
+**Version-scope correction, 2026-10-16:** The recovered word-consuming handler and downstream CPU controller described below were audited in VG-8EX 1.01. VG-8 1.04 has a verified bytewise drain; the searched EX consumer signature is absent. This does not prove universal absence of every possible 1.04 consumer. See [IC23 status](IC23_STATUS.md) and [issue #1 review](ISSUE_1_REVIEW.md).
+
 The host-visible packet and much of the CPU-side controller state machine are recovered. Current bounded packet interpretation: word `0x28` low byte = physical string index; `0x2A` = amplitude/envelope field with packet-reject behavior; `0x2C` = pitch-period/state with invalid-pitch handling.
 
 The ordinary active-note CPU controller path contains no calls to the recovered CSP PRAM/CRAM programming API, favoring a continuous hardware-side control architecture rather than per-note CPU DSP rewrites.

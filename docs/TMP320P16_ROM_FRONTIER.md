@@ -78,7 +78,7 @@ Status: **invasive; not a current project prerequisite**.
 
 ## What is already behaviorally recovered
 
-The VG host-visible IC23 packet is substantially constrained:
+The **VG-8EX 1.01** host-visible packet is substantially constrained. The 2026-10-16 [issue #1 review](ISSUE_1_REVIEW.md) narrows the former version-unspecified wording; the EX controller must not be assumed present in VG-8 1.04:
 
 - word `0x28`: low byte selects physical string 0–5;
 - word `0x2A`: amplitude/envelope field with packet-reject behavior;
